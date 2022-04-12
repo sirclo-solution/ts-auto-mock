@@ -433,11 +433,7 @@ export function createImportAllAs(
   return core.ts.factory.createImportDeclaration(
     [],
     [],
-    core.ts.factory.createImportClause(
-      false,
-      undefined,
-      core.ts.factory.createNamespaceImport(moduleName)
-    ),
+    core.ts.factory.createImportClause(false, moduleName, undefined),
     core.ts.factory.createStringLiteral(filenameToImportFrom)
   );
 }
